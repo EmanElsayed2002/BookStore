@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>BookStore</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="hero-text">
+          <form action="">
+            <label for="NoBook">Enter Number Of Books</label>
+            <input
+              type="text"
+              id="NoBook"
+              name="NoBook"
+              placeholder="numbers only"
+              tabindex="1"
+            />
+            <span class="error hidden">Please enter numbers only</span>
+            <input type="submit" value="Add" tabindex="2" />
+          </form>
+        </div>
+
+        <div class="create-Books hidden">
+          <form action="">
+            <h3>Book Library</h3>
+            <label for="Bname">
+              Book Name
+              <input
+                type="text"
+                id="Bname"
+                name="Bname"
+                placeholder="Enter Book Name"
+              />
+            </label>
+            <span class="error"></span>
+
+            <label for="Bprice">
+              Book Price
+              <input
+                type="text"
+                id="Bprice"
+                name="Bprice"
+                placeholder="Enter Book Price"
+              />
+            </label>
+            <span class="error"></span>
+
+            <label for="Aname">
+              Author Name
+              <input
+                type="text"
+                id="Aname"
+                name="Aname"
+                placeholder="Enter Author Name"
+              />
+            </label>
+            <span class="error"></span>
+
+            <label for="Aemail">
+              Author Email
+              <input
+                type="text"
+                id="Aemail"
+                name="Aemail"
+                placeholder="Enter Author Email"
+              />
+            </label>
+            <span class="error"></span>
+
+            <input type="submit" value="Create" id="createBtn" />
+          </form>
+        </div>
+
+        <div class="List-books hidden">
+          <table>
+            <thead>
+              <tr>
+                <th>Book Name</th>
+                <th>Book Price</th>
+                <th>Author Name</th>
+                <th>Author Email</th>
+                <th colspan="2">Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
